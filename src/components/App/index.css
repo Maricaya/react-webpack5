@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Estonia-Regular';
+    src: url('../../assets/Estonia-Regular.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+.red {
+    font-size: 18px;
+    color: darkred;
+}
+
+.img {
+    width: 300px;
+}
