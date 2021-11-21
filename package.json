@@ -4,9 +4,12 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.pro.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.development.js",
+    "client:dev": "scripty",
+    "client:prod": "scripty",
+    "client:server": "scripty",
+    "test:unit": "scripty",
+    "test:ui": "scripty"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,7 @@
   },
   "homepage": "https://github.com/Maricaya/react-webpack5#readme",
   "devDependencies": {
+    "@swc/core": "^1.2.110",
     "@types/lodash": "^4.14.177",
     "cross-env": "^7.0.3",
     "css-loader": "^6.5.1",
@@ -29,17 +33,22 @@
     "html-webpack-plugin": "^5.5.0",
     "react-router-dom": "^6.0.2",
     "style-loader": "^3.3.1",
+    "swc-loader": "^0.1.15",
     "ts-loader": "^9.2.6",
     "typescript": "^4.5.2",
     "webpack": "^5.64.1",
     "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.5.0"
+    "webpack-dev-server": "^4.5.0",
+    "webpack-merge": "^5.8.0",
+    "webpackbar": "^5.0.2",
+    "yargs-parser": "^21.0.0"
   },
   "dependencies": {
     "@types/react": "^17.0.35",
     "@types/react-dom": "^17.0.11",
     "lodash": "^4.17.21",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "scripty": "^2.0.0"
   }
 }
